@@ -29,53 +29,5 @@ A **real-time facial verification system** that uses a **Siamese Neural Network*
 ## Instructions
 
 1. **Install Required Libraries**:
-   - Use the following command to install dependencies:
-     ```bash
-     pip install tensorflow opencv-python matplotlib
-     ```
-
-2. **Prepare for Data Collection**:
-   - Ensure the LFW dataset is extracted into the `data/negative` directory.
-   - Positive and anchor images will be collected using the built-in webcam functionality in the code.
-
-3. **Collect Images**:
-   - Run the code provided and:
-     - Press `p` to capture positive images.
-     - Press `a` to capture anchor images.
-     - Press `q` to exit.
-
-4. **Run the Project**:
-   - All necessary scripts and instructions are integrated into the Jupyter Notebook. Simply execute the cells step-by-step to:
-     - Train the Siamese Neural Network.
-     - Conduct real-time facial verification using the webcam.
-
----
-
-## Model Overview
-
-The **Siamese Neural Network** architecture:
-1. **Embedding Layers**: Extract features from input images using convolutional layers.
-2. **Distance Calculation**: Compute similarity using L1 distance.
-3. **Classification Layer**: Predict similarity scores using a sigmoid function.
-
-### Training Pipeline
-1. Preprocess images (resize to 100x100 and normalize).
-2. Pair positive and negative samples with labels (1 for positive, 0 for negative).
-3. Train using binary cross-entropy loss.
-
-### Real-Time Verification
-1. Capture live input via webcam.
-2. Compare input with verification samples.
-3. Return **"Access Granted"** or **"Access Denied"** based on similarity.
-
----
-
-## Future Improvements
-- **Optimize Inference Speed**: Integrate GPU acceleration for real-time performance.
-- **Improve Dataset**: Expand with additional diverse images for better generalization.
-- **Add Security Features**: Implement spoof detection to enhance security.
-
----
-
-## References
-- [One-Shot Learning with Siamese Networks (Koch et al.)](https://www.cs.toronto.edu/~zemel/documents/oneshot1.pdf)
+   ```bash
+   pip install tensorflow opencv-python matplotlib
