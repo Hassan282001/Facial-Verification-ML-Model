@@ -13,9 +13,7 @@ The core idea of the project revolves around feature extraction and comparison. 
 ### Key Components:
 
 - **Embedding Layer:** A custom CNN-based feature extractor designed to capture critical visual features from input images. It consists of four convolutional layers, max pooling layers, and a fully connected dense layer to produce a 4096-dimensional embedding.
-
 - **Distance Layer:** A custom layer calculates the L1 distance between embeddings of the input and validation images, representing their similarity.
-
 - **Sigmoid Classifier:** Converts the computed distance into a probability score indicating whether the two images are a match.
 
 ---
