@@ -1,4 +1,4 @@
-# Siamese Neural Network for One-Shot Image Verification
+# Siamese Neural Network for Facial Verification
 
 ## Overview
 
